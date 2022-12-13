@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 from datetime import date
+
+#Classes for response_model
 class CompetitionBase(BaseModel):
     name : str
     status : str

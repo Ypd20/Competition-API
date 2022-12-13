@@ -1,10 +1,11 @@
 from pydantic import BaseModel
-class CreateEntry(BaseModel):
 
-    title: str
-    topic : str
-    country : str
-    state : str
+#Classes for response_model
+class CreateEntry(BaseModel):
+     title: str
+     topic : str
+     country : str
+     state : str
 
 
 class ShowEntries(BaseModel):

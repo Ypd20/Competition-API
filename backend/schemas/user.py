@@ -9,6 +9,8 @@ class User(BaseModel):
     is_active : bool
     is_deleted : bool
 
+##Classes for response_model
+
 class CreateUser(BaseModel):
     name : str
     birth_date : date = Field (default_factory = date( 2022, 12, 12))
