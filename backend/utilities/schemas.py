@@ -1,8 +1,11 @@
 from ..database.database import SessionLocal
-# Initialising Session
+
+""" For connection with database."""
+
+
 def get_db():
     db = SessionLocal()
     try:
-         yield db
+        yield db
     finally:
         db.close()
